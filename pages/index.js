@@ -14,6 +14,7 @@ export default function Home() {
             <h1>
                 halaman home
             </h1>
+            <p>add react gtm module</p>
         </div>
     </div>
   )
