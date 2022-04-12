@@ -1,0 +1,37 @@
+import Link from 'next/link';
+import styles from './Navbar.module.css'
+
+const Navbar = () => {
+    return (
+        <nav className={styles.navWrapper}>
+            <div>
+                <Link href="/">
+                    <a>
+                        Demo GA/GTM
+                    </a>
+                </Link>
+            </div>
+            <div>
+                <Link href="/foods">
+                    <a className={styles.navCategoryLink}>
+                        Food
+                    </a>
+                </Link>
+                <Link href="/baverages">
+                    <a className={styles.navCategoryLink}>
+                        Baverages
+                    </a>
+                </Link>
+            </div>
+            <div>
+                <Link href="/checkout">
+                    <a>
+                        checkout
+                    </a>
+                </Link>
+            </div>
+        </nav>
+    );
+}
+ 
+export default Navbar;

@@ -1,0 +1,14 @@
+.navWrapper {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: space-between;
+    background-color: lightblue;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    text-transform: capitalize;
+}
+
+.navCategoryLink {
+    margin: 0 12px;
+}
