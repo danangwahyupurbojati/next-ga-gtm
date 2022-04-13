@@ -1,0 +1,15 @@
+.buttonWrapper {
+    border: 1px solid black;
+    padding: 16px;
+    margin: 12px auto;
+}
+
+.checkoutWrapper {
+    border: 2px solid red;
+    padding: 16px;
+    margin: 12px auto;
+}
+
+.checkoutWrapper button {
+    margin: 8px;
+}
