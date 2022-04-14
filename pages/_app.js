@@ -6,7 +6,8 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
     useEffect(() => {
         TagManager.initialize({
-            gtmId: 'GTM-K2NKKGK'
+            // gtmId: 'GTM-K2NKKGK'
+            gtmId: 'GTM-T7GC2KG'
         });
     }, []);
 

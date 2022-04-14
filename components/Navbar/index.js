@@ -22,9 +22,14 @@ const Navbar = () => {
                         Baverages
                     </a>
                 </Link>
-                <Link href="/testingpages">
+                {/* <Link href="/testingpages">
                     <a className={styles.navCategoryLink}>
                         Testing GTM Event
+                    </a>
+                </Link> */}
+                <Link href="/testing-ga4">
+                    <a className={styles.navCategoryLink}>
+                        Testing GA4
                     </a>
                 </Link>
             </div>
