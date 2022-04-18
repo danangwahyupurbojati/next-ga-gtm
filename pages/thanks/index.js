@@ -1,4 +1,5 @@
 import TittleHead from "../../components/TittleHead";
+import { PurchaseGA4 } from "../../helper/GA4";
 import { purchaseEventTracking } from "../../helper/GTM";
 
 const listProducts = [
@@ -31,7 +32,9 @@ const listProducts = [
 const Thanks = () => {
 
     const handlePurchase = arrayProduct => {
-        purchaseEventTracking(arrayProduct);
+        const transaction_id = Math.floor((Math.random() * 1000) + 1).toString();
+        purchaseEventTracking(arrayProduct, transaction_id);
+        PurchaseGA4(arrayProduct, transaction_id);
     }
 
     return ( 

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import TittleHead from '../../components/TittleHead';
+import { ViewItemListsGA4 } from '../../helper/GA4';
 import { productImpression } from '../../helper/GTM';
 
 const dummYCategoryProduct = [
@@ -25,6 +26,7 @@ const Baverages = () => {
 
     const handleProductImpression = (dummYCategoryProduct) => {
         productImpression(dummYCategoryProduct);
+        ViewItemListsGA4(dummYCategoryProduct);
     };
 
     return ( 

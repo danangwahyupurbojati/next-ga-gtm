@@ -308,7 +308,7 @@ export const checkoutOptionTracking = (
     TagManager.dataLayer(tagManagerArgs);
 }
 
-export const purchaseEventTracking = (products) => {
+export const purchaseEventTracking = (products, transaction_id) => {
     const tagManagerArgs = {
         dataLayer: {
             event: 'purchase',
@@ -316,7 +316,7 @@ export const purchaseEventTracking = (products) => {
             ecommerce: {
                 purchase: {
                     actionField: {
-                        id: Math.floor((Math.random() * 1000) + 1).toString(),
+                        id: transaction_id,
                         revenue: products[0].price + 1000 + 4000,
                         tax: 1000,
                         shipping: 4000
