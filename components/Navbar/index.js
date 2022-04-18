@@ -22,7 +22,7 @@ const Navbar = () => {
                         Baverages
                     </a>
                 </Link>
-                <Link href="/testingpages">
+                {/* <Link href="/testingpages">
                     <a className={styles.navCategoryLink}>
                         Testing GTM Event
                     </a>
@@ -31,7 +31,7 @@ const Navbar = () => {
                     <a className={styles.navCategoryLink}>
                         Testing GA4
                     </a>
-                </Link>
+                </Link> */}
             </div>
             <div>
                 <Link href="/checkout">

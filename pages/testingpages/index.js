@@ -1,3 +1,4 @@
+import TittleHead from '../../components/TittleHead';
 import { 
     addToCartTracking, 
     checkoutOptionTracking, 
@@ -43,6 +44,7 @@ const TestingPages = () => {
 
     return (
         <div>
+            <TittleHead title="testing pages" />
             <h1>Testing Pages</h1>
 
             <div className={styles.buttonWrapper}>
