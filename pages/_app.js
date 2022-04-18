@@ -6,8 +6,9 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
     useEffect(() => {
         TagManager.initialize({
-            // gtmId: 'GTM-K2NKKGK'
-            gtmId: 'GTM-T7GC2KG'
+            // gtmId: 'GTM-K2NKKGK' // demo gtm
+            // gtmId: 'GTM-T7GC2KG' // ga 4 with ua
+            gtmId: 'GTM-MLH2QRN' // ga gtm demo 3 (separate)
         });
     }, []);
 

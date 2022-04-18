@@ -1,10 +1,12 @@
 
+import TittleHead from '../../components/TittleHead';
 import { AddToCart, BeginCheckout, Purchase, SelectItem } from '../../helper/GA4';
 import styles from '../../styles/TestingPages.module.css';
 
 const TestingPages = () => {
     return (
         <div>
+            <TittleHead title="testing ga4" />
             <h1>Testing Pages</h1>
 
             <div className={styles.buttonWrapper}>
