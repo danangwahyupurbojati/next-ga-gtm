@@ -1,6 +1,7 @@
 import TittleHead from "../../components/TittleHead";
 import { checkoutTracking, checkoutOptionTracking } from "../../helper/GTM";
 import { useRouter } from 'next/router'
+import { BeginCheckoutGA4, PaymentInfoGA4, ShippingInfoGA4 } from "../../helper/GA4";
 
 const listProducts = [
     [{
@@ -40,6 +41,9 @@ const Checkout = () => {
 
         checkoutTracking(arrayProduct, 'IDR', actionField);
         checkoutOptionTracking('IDR', { ...actionField,  action: 'checkoutOption'});
+
+        // GA4 Begin Checkout
+        BeginCheckoutGA4(arrayProduct);
     };
 
     const stepTwo = (arrayProduct) => {
@@ -50,6 +54,9 @@ const Checkout = () => {
 
         checkoutTracking(arrayProduct, 'IDR', actionField);
         checkoutOptionTracking('IDR', { ...actionField,  action: 'checkoutOption'});
+
+        // GA4 Shipping Info
+        ShippingInfoGA4(arrayProduct, actionField.option);
     };
 
     const stepThree = (arrayProduct) => {
@@ -60,6 +67,10 @@ const Checkout = () => {
 
         checkoutTracking(arrayProduct, 'IDR', actionField);
         checkoutOptionTracking('IDR', { ...actionField,  action: 'checkoutOption'});
+
+        // GA4 PaymentInfo
+        PaymentInfoGA4(arrayProduct, actionField.option);
+
         router.push('/thanks');
     };
 

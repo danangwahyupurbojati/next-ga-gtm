@@ -1,4 +1,5 @@
 import TittleHead from "../../../components/TittleHead";
+import { AddToCartGA4, SelectItemGA4, ViewItemGA4 } from "../../../helper/GA4";
 import { addToCartTracking, productClickTracking, productView } from "../../../helper/GTM";
 
 const detailProduct = [{
@@ -13,14 +14,17 @@ const detailProduct = [{
 const JusBuah = () => {
     const handleProductClickTracking = detailProduct => {
         productClickTracking(detailProduct)
+        SelectItemGA4(detailProduct);
     }
 
     const handleProductView = detailProduct => {
-        productView(detailProduct)
+        productView(detailProduct);
+        ViewItemGA4(detailProduct);
     }
 
     const handleAddtoCart = detailProduct => {
-        addToCartTracking(detailProduct)
+        addToCartTracking(detailProduct);
+        AddToCartGA4(detailProduct);
     }
     return ( 
         <div>
