@@ -26,7 +26,7 @@ const Baverages = () => {
 
     const handleProductImpression = (dummYCategoryProduct) => {
         productImpression(dummYCategoryProduct);
-        ViewItemListsGA4(dummYCategoryProduct);
+        // ViewItemListsGA4(dummYCategoryProduct);
     };
 
     return ( 

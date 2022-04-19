@@ -13,17 +13,17 @@ const detailProduct = [{
 const MieAyam = () => {
     const handleProductClickTracking = detailProduct => {
         productClickTracking(detailProduct);
-        SelectItemGA4(detailProduct);
+        // SelectItemGA4(detailProduct);
     }
 
     const handleProductView = detailProduct => {
         productView(detailProduct);
-        ViewItemGA4(detailProduct);
+        // ViewItemGA4(detailProduct);
     }
 
     const handleAddtoCart = detailProduct => {
         addToCartTracking(detailProduct);
-        AddToCartGA4(detailProduct);
+        // AddToCartGA4(detailProduct);
     }
     return ( 
         <div>

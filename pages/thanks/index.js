@@ -34,7 +34,7 @@ const Thanks = () => {
     const handlePurchase = arrayProduct => {
         const transaction_id = Math.floor((Math.random() * 1000) + 1).toString();
         purchaseEventTracking(arrayProduct, transaction_id);
-        PurchaseGA4(arrayProduct, transaction_id);
+        // PurchaseGA4(arrayProduct, transaction_id);
     }
 
     return ( 

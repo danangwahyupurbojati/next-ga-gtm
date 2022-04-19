@@ -43,7 +43,7 @@ const Checkout = () => {
         checkoutOptionTracking('IDR', { ...actionField,  action: 'checkoutOption'});
 
         // GA4 Begin Checkout
-        BeginCheckoutGA4(arrayProduct);
+        // BeginCheckoutGA4(arrayProduct);
     };
 
     const stepTwo = (arrayProduct) => {
@@ -56,7 +56,7 @@ const Checkout = () => {
         checkoutOptionTracking('IDR', { ...actionField,  action: 'checkoutOption'});
 
         // GA4 Shipping Info
-        ShippingInfoGA4(arrayProduct, actionField.option);
+        // ShippingInfoGA4(arrayProduct, actionField.option);
     };
 
     const stepThree = (arrayProduct) => {
@@ -69,7 +69,7 @@ const Checkout = () => {
         checkoutOptionTracking('IDR', { ...actionField,  action: 'checkoutOption'});
 
         // GA4 PaymentInfo
-        PaymentInfoGA4(arrayProduct, actionField.option);
+        // PaymentInfoGA4(arrayProduct, actionField.option);
 
         router.push('/thanks');
     };

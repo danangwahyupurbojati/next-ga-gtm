@@ -250,7 +250,7 @@ export const checkoutTracking = (
         }
     };
 
-    console.log(`checkout step ${actionField.step} ${JSON.stringify(tagManagerArgs.dataLayer)}`)
+    console.log('checkout step' , tagManagerArgs);
 
     TagManager.dataLayer(tagManagerArgs);
 };
