@@ -1,3 +1,7 @@
+update 19 April GA4 vs UA
+![ua vs ga 19 april](https://user-images.githubusercontent.com/90602972/164127671-62b54c80-a5f8-4294-8f3f-1b67d589da93.png)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
