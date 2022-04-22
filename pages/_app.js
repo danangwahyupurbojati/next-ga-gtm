@@ -8,7 +8,8 @@ function MyApp({ Component, pageProps }) {
         TagManager.initialize({
             // gtmId: 'GTM-K2NKKGK' // demo gtm
             // gtmId: 'GTM-T7GC2KG' // ga 4 with ua
-            gtmId: 'GTM-MLH2QRN' // ga gtm demo 3 (separate)
+            // gtmId: 'GTM-MLH2QRN' // ga gtm demo 3 (separate)
+            gtmId: 'GTM-WBD7T6K' // ga gtm demo final
         });
     }, []);
 
